@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Chat Bot</title>
+    <!-- Favicon for browser tab -->
+    <link rel="icon" type="image/jpg" href="./img/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <div id="brand">
+            <img src="./img/logo.jpg" id="logo" height="100px" alt="PetBot" id="brand-logo"><h1>Pet Bot</h1>
+        </div>
+        <!-- AI Chat Box -->
+        <div class="ai-chat-box">
+            <img src="./img/logo.jpg" alt="" id="aiImage" width="10%">
+            <div class="ai-chat-area">
+                Yor Pet-Friendly Bot! your personalized assistant for Pets. Ask me anything about pets, pet food, or their living style!
+            </div>
+        </div>
+    </div>
+    <!-- Prompt Area -->
+    <div class="prompt-area">
+        <input type="text" id="prompt" placeholder="Ask Our PetBot ...">
+        <div class="input-btns">
+            <div class="left-btns">
+                <button id="mic"><img src="./img/mic.svg" alt="Microphone"></button>
+                <button id="image">
+                    <img src="./img/img.svg" alt="">
+                    <input type="file" accept="images/*" hidden>
+                </button>
+            </div>
+            <button id="submit"><img src="./img/chat-icon.png" alt=""></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

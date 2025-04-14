@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Chat Container */
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+/* Branding */
+#brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+#brand h1 {
+    color: #2b5876;
+    font-size: 28px;
+}
+
+#logo {
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Chat Bubbles */
+.user-chat-box,
+.ai-chat-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.user-chat-area, .ai-chat-area {
+    padding: 12px 16px;
+    border-radius: 18px;
+    line-height: 1.5;
+    max-width: 70%;
+    font-size: 15px;
+}
+
+.user-chat-box .user-chat-area {
+    background: #e0f7fa;
+    color: #00796b;
+    align-self: flex-end;
+}
+
+.ai-chat-box .ai-chat-area {
+    background: #f1f8e9;
+    color: #33691e;
+    position: relative;
+}
+
+.ai-chat-box .load {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Prompt Area */
+.prompt-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    bottom: 10px;
+    width:58%;
+    margin: 0 auto;
+}
+
+#prompt {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 15px;
+    background: #fefefe;
+
+}
+#prompt:focus{
+    outline:none;
+}
+
+/* Button Styling */
+.input-btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    background-color: #1676ca;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0e4ba6;
+}
+
+#submit img,
+#mic img,
+#image img,
+.speak-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.speak-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+}
+
+/* Optional: Animation for Speaking Button */
+.speak-btn img:hover {
+    transform: scale(1.1);
+}
+
+/* Image selection styling */
+.choose {
+    border: 2px dashed #66bb6a;
+    padding: 4px;
+    border-radius: 10px;
+    max-width: 100px;
+    margin-top: 5px;
+}
